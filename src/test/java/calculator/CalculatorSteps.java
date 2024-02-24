@@ -24,4 +24,18 @@ public class CalculatorSteps {
             throw new IllegalStateException();
         }
     }
+
+    @Then("the multiply should be <res>")
+    public void theMultiplyShouldBeRes() {
+        //add multiply code
+    }
+
+    @Then("the sub should be {int}")
+    public void theSubShouldBe(int arg0) {
+        this.calculator.subtraction();
+        if (arg0 != this.calculator.getResult()) { // or using Junit's asserts
+            throw new IllegalStateException();
+        }
+    }
+
 }

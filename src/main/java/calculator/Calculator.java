@@ -26,4 +26,12 @@ public class Calculator {
         }
         return numbers.get(0);
     }
+
+    public void subtraction(){
+        if (numbers.size() != 2){
+            throw new IllegalStateException();
+        }
+        numbers.set(0, numbers.get(0) - numbers.get(1));
+        numbers.remove(1);
+    }
 }
