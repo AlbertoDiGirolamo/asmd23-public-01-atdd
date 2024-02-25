@@ -3,6 +3,8 @@
 
 **Discussion**
 
+### First request:
+
 * For the first step i ask to ChatGPT this request:
 > i want implement Gherkin specification in my application written in java. 
   My application is a simple calculator. i want add division operation where i add two number and then i obtain the result of the division. 
@@ -52,6 +54,33 @@ Scenario: Divide two positive numbers
     And I have entered the second number 1 into the calculator
     When I press divide
     Then the result should be 1 on the screen
+```
+### Second request:
+* I upload the correct template to ChatGPT and I ask to realize other operations (dividing two negative numbers and dividing positive by negative).
+>Using the follow template, write scenarios about dividing two negative numbers and dividing positive by negative:
+```
+Feature: Division Operation
+Scenario: Divide two positive numbers
+    Given I have entered the first number 1 into the calculator
+    And I have entered the second number 1 into the calculator
+    When I press divide
+    Then the result should be 1 on the screen write the
+```
+* The answer is the following: 
+```
+Feature: Division Operation
+
+Scenario: Divide two negative numbers
+    Given I have entered the first number -10 into the calculator
+    And I have entered the second number -2 into the calculator
+    When I press divide
+    Then the result should be 5 on the screen
+
+Scenario: Divide positive by negative
+    Given I have entered the first number 20 into the calculator
+    And I have entered the second number -5 into the calculator
+    When I press divide
+    Then the result should be -4 on the screen
 ```
 
 
