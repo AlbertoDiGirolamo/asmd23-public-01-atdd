@@ -42,4 +42,16 @@ public class Calculator {
         numbers.set(0, numbers.get(0) * numbers.get(1));
         numbers.remove(1);
     }
+
+    public int divide() {
+        if (numbers.size() != 2){
+            throw new IllegalStateException();
+        }
+        if (numbers.get(1) == 0) {
+            throw new ArithmeticException("Cannot divide by zero");
+        }
+        numbers.set(0, numbers.get(0) / numbers.get(1));
+        numbers.remove(1);
+        return numbers.get(0);
+    }
 }

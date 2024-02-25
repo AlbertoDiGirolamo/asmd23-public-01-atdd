@@ -40,4 +40,25 @@ public class CalculatorSteps {
             throw new IllegalStateException();
         }
     }
+
+
+    @When("I press divide")
+    public void iPressDivide() {
+        res = calculator.divide();
+    }
+
+    @Then("the result should be {int} on the screen")
+    public void theResultShouldBeIntOnTheScreen(int expectedResult) {
+        assert res == expectedResult;
+    }
+
+    @Given("I have entered the first number {int} into the calculator")
+    public void iHaveEnteredTheFirstNumberIntoTheCalculator(int arg0) {
+        calculator = new Calculator();
+        calculator.enter(arg0);
+    }
+    @And("I have entered the second number {int} into the calculator")
+    public void iHaveEnteredTheSecondNumberIntIntoTheCalculator(int arg0) {
+        calculator.enter(arg0);
+    }
 }
