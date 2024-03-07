@@ -1,4 +1,12 @@
-# Task ATDD-LLM
+# Task 1: CALCULATOR
+
+I have experimented with Gherkin functionalities by implementing some mathematical operations applying ATDD (Acceptance Test-Driven Development) approach.
+
+* Subtractions operations is implement using Background.
+* Multiplication operations is implement using Scenario Outline to test the scenarios with different parameters.
+
+
+# Task 5: ATDD-LLM
 ## LLMs/ChatGPT can arguably help in write/improve/complete/implement/reverse-engineer a Gherkin specification. Experiment with this, based on the above tasks or in other cases. Is ChatGPT useful for all that?
 
 **Discussion**
