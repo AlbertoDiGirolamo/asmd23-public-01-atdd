@@ -2,8 +2,8 @@
 
 I have experimented with Gherkin functionalities by implementing some mathematical operations applying ATDD (Acceptance Test-Driven Development) approach.
 
-* Subtractions operations is implement using Background.
-* Multiplication operations is implement using Scenario Outline to test the scenarios with different parameters.
+* Subtractions operations is implement using Background. Located in `src/test/resources/features/Calculator-subtractions.feature`
+* Multiplication operations is implement using Scenario Outline to test the scenarios with different parameters. Located in `src/test/resources/features/Calculator-outline-multiplier.feature`
 
 
 # Task 5: ATDD-LLM
